@@ -4,7 +4,7 @@
  * greateprogrammer@yahoo.com
  * date : 2017/11/20 16:20
  */
-package {
+package team {
     public class main extends test{
         public function main () {
             super();

@@ -4,7 +4,7 @@
  * greateprogrammer@yahoo.com
  * date : 2017/11/20 17:03
  */
-package {
+package team {
     public class forPatch {
         public function forPatch () {
         }
