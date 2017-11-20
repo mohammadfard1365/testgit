@@ -35,6 +35,7 @@ package net.jhoobin.jhub.payment
 				var e:InAppPurchaseEvent = new InAppPurchaseEvent(InAppPurchaseEvent.INIT_ERROR, "Error! ANE file was not properly added to your project.");
 				this.dispatchEvent(e)
 			}
+			Capabilities.screenResolutionX;
 		}
 		
 		public function init(base64EncodedPublicKey:String):void
