@@ -16,17 +16,20 @@
 
 package net.jhoobin.jhub.payment
 {
-	import flash.events.EventDispatcher;
-	import flash.events.StatusEvent;
-	import flash.external.ExtensionContext;
-	import flash.system.Capabilities;
+    import flash.display.MovieClip;
+    import flash.events.EventDispatcher;
+    import flash.events.StatusEvent;
+    import flash.external.ExtensionContext;
+    import flash.system.Capabilities;
 
-	public class InAppPurchase extends EventDispatcher
+    public class InAppPurchase extends EventDispatcher
 	{
 		protected var _ctx:ExtensionContext;
 		
 		public function InAppPurchase()
 		{
+            var a : MovieClip;
+
 			_ctx = ExtensionContext.createExtensionContext("net.jhoobin.AndroidInAppPurchase", null);
 			if(_ctx != null)
 				_ctx.addEventListener(StatusEvent.STATUS, onStatus);
